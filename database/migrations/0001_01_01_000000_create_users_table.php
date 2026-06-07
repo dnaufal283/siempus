@@ -12,7 +12,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
-            $table->enum('role', ['admin', 'admin_it', 'pasien', 'dokter', 'apoteker', 'kepala'])->default('pasien');
+            $table->enum('role', ['admin', 'it', 'pasien', 'dokter', 'apoteker', 'kepala'])->default('pasien');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
